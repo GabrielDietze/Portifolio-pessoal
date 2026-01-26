@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+main {
+  position: relative;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
