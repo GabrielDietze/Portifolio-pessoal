@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTheme } from '../../contexts/ThemeContext'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useTranslations } from '../../i18n/translations'
-import { HiMenu, HiX, HiHome, HiLightBulb, HiMail, HiGlobeAlt, HiBriefcase } from 'react-icons/hi'
+import { HiMenu, HiX, HiHome, HiMail, HiGlobeAlt, HiBriefcase, HiCode, HiLightningBolt } from 'react-icons/hi'
 import { BsMoon, BsSun } from 'react-icons/bs'
 import './Header.css'
 
@@ -73,13 +73,13 @@ const Header = () => {
                 </li>
                 <li>
                   <button onClick={() => scrollToSection('skills')} className="nav-link">
-                    <HiLightBulb className="nav-icon" />
+                    <HiLightningBolt className="nav-icon" />
                     <span>{t.nav.skills}</span>
                   </button>
                 </li>
                 <li>
                   <button onClick={() => scrollToSection('projects')} className="nav-link">
-                    <HiLightBulb className="nav-icon" />
+                    <HiCode className="nav-icon" />
                     <span>{t.nav.projects}</span>
                   </button>
                 </li>
