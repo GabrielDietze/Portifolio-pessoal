@@ -1,6 +1,6 @@
 # Portfólio - Gabriel Dietze
 
-Portfólio pessoal desenvolvido em React com TypeScript, focado em destacar a experiência como Desenvolvedor SAP ABAP Pleno.
+Portfólio pessoal desenvolvido em React com TypeScript, focado em destacar a experiência como Desenvolvedor SAP ABAP.
 
 ## 🚀 Tecnologias
 
