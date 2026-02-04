@@ -1,0 +1,7 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="128" fill="#1a1f2e"/>
+  
+  <!-- GD Text -->
+  <text x="128" y="145" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#00a8e8" text-anchor="middle">GD</text>
+</svg>
