@@ -123,9 +123,7 @@ a {
 
 a:hover {
   color: var(--accent-hover);
-}
-
-/* Botões base */
+}/* Botões base */
 button {
   font-family: inherit;
   cursor: pointer;

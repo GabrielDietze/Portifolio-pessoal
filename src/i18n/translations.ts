@@ -550,41 +550,7 @@ export const translations: Record<'pt' | 'en', Translations> = {
             'Improved security and auditing',
           ],
         },
-        {
-          title: 'Automatic License Plate Recognition (ALPR)',
-          description:
-            'End-to-end real-time license plate recognition system using YOLOv11, SORT tracking and EasyOCR, with a full image-processing pipeline (upscaling, denoising, sharpening, thresholding) and heuristic corrections for OCR errors.',
-          technologies: ['Python', 'YOLOv11', 'OpenCV', 'EasyOCR', 'SORT', 'Pandas', 'NumPy'],
-          impact: [
-            'High-accuracy detection and tracking of vehicles and license plates in video streams',
-            'Robust OCR even in low-quality frames thanks to dedicated preprocessing pipeline',
-            'Academic-grade project demonstrating strong skills in computer vision and PID',
-          ],
-        },
-        {
-          title: 'Netflix-like Movie Catalog (Elite Dev Challenge)',
-          description:
-            'Web application inspired by Netflix that lists and explores movies using The Movie Database (TMDB) API, focusing on UI, responsiveness and clean front-end architecture.',
-          technologies: ['JavaScript', 'HTML', 'CSS', 'TMDB API'],
-          impact: [
-            'Delivers a familiar streaming-style experience with movie covers and details',
-            'Strengthens front-end skills in API consumption, state handling and layout',
-            'Serves as a solid visual project for demonstrating modern UI development',
-          ],
-        },
-        {
-          title: 'Java Compiler from Scratch',
-          description:
-            'Educational compiler implemented in pure Java without external libraries, covering lexical, syntactic and semantic analysis plus code generation.',
-          technologies: ['Java', 'Compiler Theory'],
-          impact: [
-            'Demonstrates deep understanding of language design and compilation stages',
-            'Reinforces strong foundations in algorithms, data structures and parsing',
-            'Highlights ability to build complex systems without relying on heavy frameworks',
-          ],
-          githubUrl: '',
-          image: 'sap-password',
-        },
+
         {
           title: 'Automatic License Plate Recognition (ALPR)',
           description:
