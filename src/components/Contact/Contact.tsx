@@ -1,7 +1,6 @@
-import { useState } from 'react'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useTranslations } from '../../i18n/translations'
-import { HiMail, HiDocumentText } from 'react-icons/hi'
+import { HiMail, HiPaperAirplane } from 'react-icons/hi'
 import './Contact.css'
 
 /**
@@ -11,24 +10,9 @@ import './Contact.css'
 const Contact = () => {
   const { language } = useLanguage()
   const t = useTranslations(language)
-  const [copied, setCopied] = useState(false)
 
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(t.contact.email)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    } catch (err) {
-      const textArea = document.createElement('textarea')
-      textArea.value = t.contact.email
-      document.body.appendChild(textArea)
-      textArea.select()
-      document.execCommand('copy')
-      document.body.removeChild(textArea)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    }
-  }
+  // Cria o link mailto com assunto e corpo pré-preenchidos
+  const mailtoLink = `mailto:${t.contact.email}?subject=${encodeURIComponent(t.contact.emailSubject)}&body=${encodeURIComponent(t.contact.emailBody)}`
 
   return (
     <section id="contact" className="contact">
@@ -53,20 +37,14 @@ const Contact = () => {
                 className="contact-email-input"
                 aria-label="E-mail de contato"
               />
-              <button
-                onClick={copyEmail}
+              <a
+                href={mailtoLink}
                 className="contact-copy-button"
-                aria-label="Copiar e-mail"
+                aria-label="Enviar e-mail"
               >
-                {copied ? (
-                  <span className="copied-text">{t.contact.copied}</span>
-                ) : (
-                  <>
-                    <HiDocumentText className="copy-icon" />
-                    <span>{t.contact.copyButton}</span>
-                  </>
-                )}
-              </button>
+                <HiPaperAirplane className="copy-icon" />
+                <span>{t.contact.sendEmailButton}</span>
+              </a>
             </div>
           </div>
         </div>

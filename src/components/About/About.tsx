@@ -1,5 +1,4 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import { HiDocumentText } from 'react-icons/hi'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useTranslations } from '../../i18n/translations'
 import profileImg from '../../assets/projects/profile-about.jpeg'
@@ -45,7 +44,6 @@ const About = () => {
   const socialLinks = {
     linkedin: 'https://www.linkedin.com/in/gabriel-dietze',
     github: 'https://github.com/GabrielDietze',
-    resume: '/gabriel-dietze-curriculo.pdf',
   }
 
   const keywords = language === 'pt' 
@@ -117,15 +115,11 @@ const About = () => {
             </div>
 
             <div className="about-actions">
-              <a href={socialLinks.resume} download className="btn btn-primary">
-                <HiDocumentText style={{ marginRight: 8 }} />
-                {t.about.resumeButton}
-              </a>
               <a
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-secondary"
+                className="btn btn-primary"
               >
                 <FaLinkedin style={{ marginRight: 8 }} />
                 LinkedIn

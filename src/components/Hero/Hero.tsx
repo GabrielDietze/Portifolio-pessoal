@@ -1,7 +1,6 @@
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useTranslations } from '../../i18n/translations'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import { HiDocumentText } from 'react-icons/hi'
 import './Hero.css'
 
 /**
@@ -15,7 +14,6 @@ const Hero = () => {
   const socialLinks = {
     linkedin: 'https://www.linkedin.com/in/gabriel-dietze',
     github: 'https://github.com/GabrielDietze',
-    resume: '/gabriel-dietze-curriculo.pdf',
   }
 
   return (
@@ -62,9 +60,6 @@ const Hero = () => {
               className="social-link"
             >
               <FaGithub />
-            </a>
-            <a href={socialLinks.resume} download aria-label="Currículo PDF" className="social-link">
-              <HiDocumentText />
             </a>
           </div>
         </div>

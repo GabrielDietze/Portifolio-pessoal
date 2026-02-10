@@ -1,6 +1,6 @@
 # Portfólio - Gabriel Dietze
 
-Portfólio pessoal desenvolvido em React com TypeScript, focado em destacar a experiência como Desenvolvedor SAP ABAP Pleno.
+Portfólio pessoal desenvolvido em React com TypeScript, focado em destacar a experiência como Desenvolvedor SAP ABAP.
 
 ## 🚀 Tecnologias
 
@@ -53,25 +53,7 @@ src/
 ├── App.tsx            # Componente principal
 └── main.tsx           # Ponto de entrada
 ```
-
-## 🛠️ Personalização
-
-### Adicionar sua foto
-
-No arquivo `src/components/About/About.tsx`, substitua o placeholder pela tag `<img>`:
-
-```tsx
-<img 
-  src="/sua-foto.jpg" 
-  alt="Gabriel Dietze" 
-  className="about-image"
-/>
-```
-
-### Adicionar links de projetos
-
-No arquivo `src/components/Projects/Projects.tsx`, adicione links aos projetos conforme necessário.
-
+ 
 ## 📝 Licença
 
 Este projeto é de uso pessoal.

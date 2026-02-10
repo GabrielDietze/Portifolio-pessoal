@@ -21,10 +21,17 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
  * Persiste a preferência do usuário no localStorage
  */
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  // Verifica se há idioma salvo ou usa português como padrão
+  // Detecta o idioma do navegador ou usa idioma salvo
   const [language, setLanguageState] = useState<Language>(() => {
     const savedLanguage = localStorage.getItem('language') as Language | null
-    return savedLanguage || 'pt'
+    if (savedLanguage) return savedLanguage
+    
+    // Detecta o idioma do navegador
+    const browserLanguage = navigator.language || navigator.languages?.[0] || 'pt-BR'
+    const languageCode = browserLanguage.split('-')[0].toLowerCase()
+    
+    // Retorna 'en' se for inglês, senão 'pt'
+    return languageCode === 'en' ? 'en' : 'pt'
   })
 
   // Salva o idioma no localStorage quando alterado

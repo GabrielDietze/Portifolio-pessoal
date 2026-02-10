@@ -65,8 +65,9 @@ export interface Translations {
     title: string
     description: string
     email: string
-    copyButton: string
-    copied: string
+    sendEmailButton: string
+    emailSubject: string
+    emailBody: string
   }
   about: {
     label: string
@@ -101,7 +102,7 @@ export const translations: Record<'pt' | 'en', Translations> = {
       badge: 'Desenvolvedor SAP ABAP',
       title: 'Gabriel Dietze',
       rolePrefix: 'Desenvolvedor',
-      role: 'SAP ABAP Pleno',
+      role: 'SAP ABAP',
       description:
         'Especialista em desenvolvimento SAP ABAP com foco em soluções empresariais escaláveis. Experiência comprovada em múltiplos módulos SAP, integrações complexas e automação de processos críticos.',
       stats: {
@@ -123,7 +124,7 @@ export const translations: Record<'pt' | 'en', Translations> = {
       items: [
         {
           company: 'Grupo Ferroeste',
-          role: 'Desenvolvedor SAP ABAP Pleno',
+          role: 'Desenvolvedor SAP ABAP',
           period: '2024 - Atualmente',
           achievements: [
             'Desenvolvimento, manutenção e melhoria de soluções em SAP ABAP, incluindo relatórios ALV, funções, serviços, user exits, Enhancements, interfaces, SmartForms e debugging de código, com foco em performance, segurança e aderência às boas práticas SAP.',
@@ -323,8 +324,9 @@ export const translations: Record<'pt' | 'en', Translations> = {
       description:
         'Estou sempre aberto a discutir novos projetos, oportunidades de colaboração ou simplesmente trocar ideias sobre tecnologia SAP.',
       email: 'gabrieldietzenovy@gmail.com',
-      copyButton: 'Copiar E-mail',
-      copied: 'E-mail copiado!',
+      sendEmailButton: 'Enviar E-mail',
+      emailSubject: 'Contato via Portfólio - Oportunidade',
+      emailBody: 'Olá Gabriel,\n\nVi seu portfólio e gostaria de conversar sobre uma oportunidade.\n\n',
     },
     about: {
       label: 'Sobre mim',
@@ -378,7 +380,7 @@ export const translations: Record<'pt' | 'en', Translations> = {
       badge: 'SAP ABAP Developer',
       title: 'Gabriel Dietze',
       rolePrefix: 'SAP ABAP',
-      role: 'Pleno Developer',
+      role: 'Developer',
       description:
         'SAP ABAP development specialist focused on scalable enterprise solutions. Proven experience in multiple SAP modules, complex integrations, and critical process automation.',
       stats: {
@@ -400,7 +402,7 @@ export const translations: Record<'pt' | 'en', Translations> = {
       items: [
         {
           company: 'Grupo Ferroeste',
-          role: 'SAP ABAP Pleno Developer',
+          role: 'SAP ABAP Developer',
           period: '2024 - Present',
           achievements: [
             'Development, maintenance and evolution of SAP ABAP solutions, including ALV reports, function modules, services, user exits, enhancements, interfaces, SmartForms and code debugging, with focus on performance, security and SAP best practices compliance.',
@@ -598,8 +600,9 @@ export const translations: Record<'pt' | 'en', Translations> = {
       description:
         'I am always open to discussing new projects, collaboration opportunities or simply exchanging ideas about SAP technology.',
       email: 'gabrieldietzenovy@gmail.com',
-      copyButton: 'Copy Email',
-      copied: 'Email copied!',
+      sendEmailButton: 'Send Email',
+      emailSubject: 'Contact via Portfolio - Opportunity',
+      emailBody: 'Hello Gabriel,\\n\\nI saw your portfolio and would like to talk about an opportunity.\\n\\n',
     },
     about: {
       label: 'About',
