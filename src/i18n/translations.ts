@@ -87,6 +87,17 @@ export interface Translations {
     title: string
     paragraphs: string[]
   }
+  education: {
+    label: string
+    title: string
+    description: string
+    items: Array<{
+      course: string
+      institution: string
+      location: string
+      status: string
+    }>
+  }
 }
 
 export const translations: Record<'pt' | 'en', Translations> = {
@@ -367,6 +378,25 @@ export const translations: Record<'pt' | 'en', Translations> = {
         'Buscar evolução técnica contínua para assumir responsabilidades mais complexas, contribuindo de forma estratégica para a estabilidade dos sistemas e para os resultados do negócio.',
       ],
     },
+    education: {
+      label: 'Formação Acadêmica',
+      title: 'Educação',
+      description: 'Qualificações e formações acadêmicas que complementam minha expertise técnica.',
+      items: [
+        {
+          course: 'Bacharelado em Ciência da Computação',
+          institution: 'Dom Helder',
+          location: 'BH/MG',
+          status: 'Em andamento - 8º Semestre',
+        },
+        {
+          course: 'Técnico em Automação Industrial',
+          institution: 'SENAI',
+          location: 'Santa Luzia/MG',
+          status: 'Concluído',
+        },
+      ],
+    },
   },
   en: {
     nav: {
@@ -641,6 +671,25 @@ export const translations: Record<'pt' | 'en', Translations> = {
       paragraphs: [
         'Act as a SAP ABAP Developer in corporate projects and productive environments, actively participating in technical analysis and understanding of business rules, focusing on developing robust, scalable solutions with high performance.',
         'Seek continuous technical evolution to assume more complex responsibilities, contributing strategically to system stability and business results.',
+      ],
+    },
+    education: {
+      label: 'Academic Background',
+      title: 'Education',
+      description: 'Academic qualifications and training that complement my technical expertise.',
+      items: [
+        {
+          course: 'Bachelor of Science in Computer Science',
+          institution: 'Dom Helder',
+          location: 'BH/MG',
+          status: 'In Progress - 8th Semester',
+        },
+        {
+          course: 'Technical Technician in Industrial Automation',
+          institution: 'SENAI',
+          location: 'Santa Luzia/MG',
+          status: 'Completed',
+        },
       ],
     },
   },

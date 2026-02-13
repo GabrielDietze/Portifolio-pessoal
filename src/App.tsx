@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
+import Education from './components/Education/Education'
 import Skills from './components/Skills/Skills'
 import ProfessionalHighlights from './components/ProfessionalHighlights/ProfessionalHighlights'
 import Projects from './components/Projects/Projects'
@@ -25,6 +26,7 @@ function App() {
             <Hero />
             <About />
             <Experience />
+            <Education />
             <Skills />
             <ProfessionalHighlights />
             <Projects />
